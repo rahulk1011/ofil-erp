@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Course Database</title>
+<body bgcolor="darkslategray">
+
+<form action="coursedbadd.php" method=post>
+
+<h3 align="center"><font color="gold" face="calibri">ADD COURSE DETAILS</font></h3>
+
+<table align="center" bgcolor="lightsteelblue" bordercolor="navy" cellspacing="5">
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Course ID</td>
+<td height="40" width="300"><input type="text" name="cid" required/>
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Course Name</td>
+<td height="40" width="300"><input type="text" name="cname" size="30" required/></td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Course Category</td>
+<td height="40" width="300">
+<select name="ccat">
+<option>---select---</option>
+<option value="Metallurgy">Metallurgy</option>
+<option value="Small Arms">Small Arms</option>
+<option value="Advance Computer">Advance Computer</option>
+<option value="CCP">Cost Control Programme</option>
+<option value="Admin">Administration</option>
+<option value="Long Term">Long Term</option>
+</select>
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right">
+<input type="submit" value="Add">
+</td>
+</tr>
+</table>
+</form>
+
+<form action=coursedbdel.php method=post>
+
+<h3 align="center"><font color="gold" face="calibri">DELETE COURSE DETAILS</font></h3>
+
+<table align="center" bgcolor="lightsteelblue" bordercolor="navy" cellspacing="5">
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Course ID</td>
+<td height="40" width="300"><input type="text" name="cid" required/>
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right">
+<input type="submit" value="Delete">
+</td>
+</tr>
+</table>
+</form>
+
+<a href=coursedbshow.php style="text-decoration:none">
+<h3 align="center"><font color="cyan" face="calibri">Show Current Course Table</font></h3>
+</a>
+
+<p align="center"><font color="linen" face="calibri">
+CAC: Advance Computer<br>
+CCC: Cost Control Programme<br>
+CIND: Long Term<br>
+CM: Metallurgy<br>
+CSA: Small Arms<br>
+NCA: Administration
+</font></p>
+
+</body>
+</html>

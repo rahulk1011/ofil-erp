@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>Course Calendar</title>
+<body bgcolor="silver">
+
+<br>
+<table align="center" width="95%">
+<tr height="15">
+<td width="200" align="center"><a href="home.html" style="text-decoration: none"><font color="black" face="calibri" size="4">HOME</a></td>
+<td width="200" align="center"><a href="courses.html" style="text-decoration: none"><font color="black" face="calibri" size="4">COURSE CALENDAR</a></td>
+<td width="200" align="center"><a href="cdirdbshow.php" style="text-decoration: none"><font color="black" face="calibri" size="4">COURSE DIRECTOR</a></td>
+<td width="200" align="center"><a href="fcdbshow.php" style="text-decoration: none"><font color="black" face="calibri" size="4">FACULTY LIST</a></td>
+<td width="200" align="center"><a href="rating.html" style="text-decoration: none"><font color="black" face="calibri" size="4">RATING</a></td>
+<td width="200" align="center"><font color="black" face="calibri" size="4"><b>BILL</a></td>
+<td width="200" align="center"><a href="pastcourses.php" style="text-decoration: none"><font color="black" face="calibri" size="4">PAST COURSES DETAIL</a></td>
+</tr>
+</table>
+
+<br>
+<font color="black" face="calibri">
+
+<form action="billshow.php" method=post>
+<table align="center" width="80%" bordercolor="black" bgcolor="white" cellspacing="5" cellpadding="5">
+<tr>
+<td align="right">Course Name</td>
+<td><input type="text" name="cname" size="40"></td>
+</tr>
+<tr>
+<td align="right">Faculty Name</td>
+<td><input type="text" name="fname" size="40"></td>
+</tr>
+<tr>
+<td align="right">Faculty's Rate</td>
+<td width="650"><input type="text" name="frate" size="10">
+Number of Hours <input type="text" name="hrs" size="10">
+Total <input type="text" name="ftot" size="10"></td>
+</tr>
+<tr>
+<td align="right">Course Expenses</td>
+<td><input type="text" name="cexp" size="10"></td>
+</tr>
+<tr>
+<td align="right">Miscellaneous Expenses</td>
+<td><input type="text" name="mexp" size="10"></td>
+</tr>
+<tr>
+<td align="right">Mess/Lodging</td>
+<td><input type="text" name="lexp" size="10"></td>
+</tr>
+<tr>
+<td align="right"><b>TOTAL</td>
+<td><input type="text" name="tot" size="10"></td>
+</tr>
+<tr>
+<td align="right"><input type="submit" value="Calculate"></td>
+<td align="left"><input type="submit" value="Print"></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

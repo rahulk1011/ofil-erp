@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Faculty Database</title>
+<body bgcolor="darkslategray">
+
+<form action="fcdbadd.php" method=post>
+
+<h3 align="center"><font color="gold" face="calibri">ADD FACULTY DETAILS</font></h3>
+
+<table align="center" bgcolor="lightsteelblue" bordercolor="navy" cellspacing="5">
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Faculty DOB</td>
+<td height="40" width="300"><input type="text" name="fcdob" required/>
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Faculty Name</td>
+<td height="40" width="300"><input type="text" name="fcname" required/>
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Organization</td>
+<td height="40" width="300"><input type="text" name="fcorg" size="30" required/></td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Working in Ordnance Factory</td>
+<td height="40" width="300">
+<input type="radio" name="fcws" value="Yes"><font color="midnightblue" face="calibri">Yes
+<input type="radio" name="fcws" value="No"><font color="midnightblue" face="calibri">No
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Home Address</td>
+<td height="40" width="300"><input type="text" name="fchadd" size="30" required/></td>
+</tr>
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Office Address</td>
+<td height="40" width="300"><input type="text" name="fcoadd" size="30" required/></td>
+</tr>
+<tr>
+<td height="40" width="300" align="right">
+<input type="submit" value="Add">
+</td>
+</tr>
+</table>
+</form>
+
+<form action="fcdbdel.php" method=post>
+<h3 align="center"><font color="gold" face="calibri">DELETE FACULTY DETAILS</font></h3>
+<table align="center" bgcolor="lightsteelblue" bordercolor="navy" cellspacing="5">
+<tr>
+<td height="40" width="300" align="right"><font color="midnightblue" face="calibri"><b>Faculty DOB</td>
+<td height="40" width="300">
+<input type="text" name="fcdob">
+</td>
+</tr>
+<tr>
+<td height="40" width="300" align="right">
+<input type="submit" value="Delete">
+</td>
+</tr>
+</table>
+</form>
+
+
+</body>
+</html>

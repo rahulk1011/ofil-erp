@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Ratings</title>
+<body bgcolor="darkslategray">
+
+<br>
+<table align="center" width="95%">
+<tr height="15">
+<td width="200" align="center"><a href="home.html" style="text-decoration: none"><font color="lime" face="calibri" size="4">HOME</a></td>
+<td width="200" align="center"><a href="courses.html" style="text-decoration: none"><font color="lime" face="calibri" size="4">COURSE CALENDAR</a></td>
+<td width="200" align="center"><a href="cdirdbshow.php" style="text-decoration: none"><font color="lime" face="calibri" size="4">COURSE DIRECTOR</a></td>
+<td width="200" align="center"><a href="fcdbshow.php" style="text-decoration: none"><font color="lime" face="calibri" size="4">FACULTY LIST</a></td>
+<td width="200" align="center"><font color="gold" face="calibri" size="4"><b>RATING</td>
+<td width="200" align="center"><a href="pastcourses.php" style="text-decoration: none"><font color="lime" face="calibri" size="4">PAST COURSES DETAIL</a></td>
+</tr>
+</table>
+
+<h3 align="center"><font color="tomato" face="calibri">Course Rating</font></h3>
+
+<form action="crating.php" method=post>
+<table align="center" bgcolor="lightsteelblue" bordercolor="navy" cellpadding="5" width="60%">
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Course ID</td>
+<td width="50%"><input type="text" name="cid" required/></td>
+</tr>
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Course Name</td>
+<td width="50%"><input type="text" name="cname" size="50" required/></td>
+</tr>
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Course Rating</td>
+<td width="50%"><input type="text" name="cgrade" size="5" required/>
+<font color="midnightblue" face="calibri">(On a scale of 4)</td>
+</tr>
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Participants</td>
+<td width="50%"><input type="text" name="cpart" size="5" required/></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Save Data"></td>
+</tr>
+</table>
+</form>
+
+<h3 align="center"><font color="tomato" face="calibri">Faculty Rating</font></h3>
+
+<form action="fcrating.php" method=post>
+<table align="center" bgcolor="lightsteelblue" bordercolor="navy" cellpadding="5" width="60%">
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Faculty Name</td>
+<td width="50%"><input type="text" name="fcname" size="30" required/></td>
+</tr>
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Faculty DOB</td>
+<td width="50%"><input type="text" name="fcdob" required/></td>
+</tr>
+<tr>
+<td align="right" width="50%"><font color="midnightblue" face="calibri"><b>Faculty Rating</td>
+<td width="50%"><input type="text" name="fcgrade" size="5" required/>
+<font color="midnightblue" face="calibri">(On a scale of 4)</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Save Data"></td>
+</tr>
+</table>
+</form>
+
+<br><br>
+
+<table align="center" bgcolor="lightsalmon" bordercolor="firebrick" cellpadding="5" width="60%">
+<tr>
+<td align="center"><a href="cratingshow.php" style="text-decoration: none">
+<font color="navy" face="calibri" size="4"><b>Show Course Ratings</b></font></a>
+</td>
+<td align="center"><a href="fcratingshow.php" style="text-decoration: none">
+<font color="navy" face="calibri" size="4"><b>Show Faculty Ratings</b></font></a>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
